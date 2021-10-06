@@ -1,9 +1,12 @@
-import express from 'express'
-import { router } from './routes'
+import express from "express";
 
-const app = express()
-app.use(express.json())
+import { router } from "./routes";
 
-app.use(router)
+const app = express();
+app.use(express.json());
 
-app.listen(3003, () => console.log('REST API server ready at: http://localhost:3003'))
+app.use(router);
+
+app.listen(3003, () =>
+  console.log("REST API server ready at: http://localhost:3003")
+);
