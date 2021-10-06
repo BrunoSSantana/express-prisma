@@ -25,7 +25,7 @@
     "rules": {
       "camelcase": "off",
       "import/no-unresolved": "error",
-      "@typescript-eslint/rule-name": "error",
+      // "@typescript-eslint/rule-name": "error",
       "@typescript-eslint/naming-convention": [
         "error",
         {
