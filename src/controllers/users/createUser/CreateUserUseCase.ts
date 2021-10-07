@@ -1,4 +1,4 @@
-import { Prisma, PrismaClient, User } from '.prisma/client';
+import { Prisma, PrismaClient, User } from '.prisma/client'
 
 class CreateUserUseCase {
   constructor(private prisma: PrismaClient) {}
@@ -13,8 +13,10 @@ class CreateUserUseCase {
         name,
         password,
       },
-    });
-    return user;
+    })
+    console.log('prsima')
+
+    return user
   }
 }
-export { CreateUserUseCase };
+export { CreateUserUseCase }
